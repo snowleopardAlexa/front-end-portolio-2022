@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 
 import theme from "../themes/default";
-import GlobalStyles from './globals';
+import GlobalStyles from './globalStyles';
 
 const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>
