@@ -1,4 +1,3 @@
-import { BsPenFill } from 'react-icons/bs';
 import { DiReact } from 'react-icons/di';
 import { MdDesignServices } from 'react-icons/md';
 import { GrGraphQl } from 'react-icons/gr';
@@ -84,4 +83,4 @@ const Technologies = () => {
   )
 }
 
-export default Technologies
+export default Technologies;
