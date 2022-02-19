@@ -26,7 +26,15 @@ export const HeaderWrapper = styled.div`
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
-export const Div2 = styled.div`
+
+export const Span = styled.div `
+   margin-left: 10px;
+   font-size: 2rem;
+   font-family: 'Baloo 2', cursive;
+   font-weight: 600;
+`;
+
+export const ProjectsContainer = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
@@ -34,7 +42,7 @@ export const Div2 = styled.div`
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
-export const Div3 = styled.div`
+export const SocialIconsContainer = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
@@ -47,6 +55,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
+  font-family: 'Readex Pro', sans-serif;
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
