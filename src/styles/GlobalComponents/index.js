@@ -25,7 +25,8 @@ export const Section = styled.section`
 `
 
 export const SectionTitle = styled.h2`
-  font-weight: 800;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 600;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
@@ -56,6 +57,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
+  font-family: 'Readex Pro', sans-serif;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;

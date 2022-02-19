@@ -26,6 +26,14 @@ export const HeaderWrapper = styled.div`
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
+
+export const Span = styled.div `
+   margin-left: 10px;
+   font-size: 2rem;
+   font-family: 'Baloo 2', cursive;
+   font-weight: 600;
+`;
+
 export const ProjectsContainer = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
@@ -47,6 +55,7 @@ export const SocialIconsContainer = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
+  font-family: 'Readex Pro', sans-serif;
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
