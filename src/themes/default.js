@@ -3,15 +3,15 @@ export default {
   // Temp fonts
   fonts: {
     title: "Baloo 2, cursive",
-    main: "Space Grotesk, sans-serif"
+    main: "Readex Pro, sans-serif"
   },
   // Colors for layout
   colors: {
-    primary1: "hsl(204,23.8%,95.9%)",
-    background1: "#0F1624",
+    primary1: "#ff00cc",
+    background1: "#333399",
     accent1: "hsl(34.9,98.6%,72.9%)",
     button: "hsl(205.1,100%,36.1%)",
-    background2: "hsl(232.7,27.3%,23.7%)",
+    background2: "#ff00cc",
   },
   // Breakpoints for responsive design
   breakpoints: {

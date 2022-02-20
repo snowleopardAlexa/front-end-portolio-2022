@@ -3,21 +3,19 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 //import Image from 'next/image';
 
-const Hero = (props) => {
+const Hero = () => {
   return (
-    <Section row nopadding>
+    <Section>
     <LeftSection>
       <SectionTitle main center>
-        Hi, I Alexa! <br />
+        Hi, I'm Alexa! <br />
         Welcome to my portfolio
       </SectionTitle>
-      
       <SectionText>
-        Hi! I am Aleksandra Slomska, but friends called me Alexa. 
-        I have been coding for 4 years and I have an extensive knowledge of front-end technologies.
-        This is my Front-end portolio. 
+        Hi! I am Aleksandra Slomska, but friends call me Alexa. 
+        This is my Front-end portolio. I am a proud moma of a fur baby Kion The Lion King.
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>
+      <Button onClick={() => window.location = 'https://www.linkedin.com/aleksandra-slomska-1039681b3/'}>
         Learn More
       </Button>
     </LeftSection>

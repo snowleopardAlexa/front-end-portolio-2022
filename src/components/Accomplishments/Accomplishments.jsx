@@ -1,16 +1,17 @@
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
 
 const data = [
   { number: 3900, text: 'Total GitHub Commits'},
   { number: 20, text: 'Projects I am proud of', },
-  { number: 201, text: 'Total Repositories'},
-  { number: 15, text: 'Technologies and Frameworks I built with'}
+  { number: 201, text: 'Total Github Repositories'},
+  { number: 10, text: 'Technologies and Frameworks'}
 ];
 
 const Accomplishments = () => {
   return (
    <Section>
+    <SectionDivider />
      <SectionTitle>Personal Achievements</SectionTitle>
      <Boxes>
        {data.map((card, index) => (
@@ -20,7 +21,6 @@ const Accomplishments = () => {
          </Box>
        ))}
      </Boxes>
-     <SectionDivider />
    </Section>
   );
 }

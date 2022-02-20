@@ -21,11 +21,11 @@ export const ImageContainer = styled.div`
     padding: 0;
     margin-top: 16px;
   }
-`
+`;
 
 export const MainImage = styled.img`
   width: 100%;
-`
+`;
 
 export const List = styled.ul`
   list-style-type: none;
@@ -48,7 +48,7 @@ export const List = styled.ul`
     flex-direction: column;
     margin: 32px 0;
   }
-`
+`;
 
 export const ListContainer = styled.div`
   display: flex;
@@ -58,11 +58,11 @@ export const ListContainer = styled.div`
     display: flex;
     margin-left: 18px;
   }
-`
+`;
 
 export const ListTitle = styled.h4`
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.2rem;
   line-height: 32px;
   margin-top: 10px;
   letter-spacing: 0.02em;
@@ -75,10 +75,8 @@ export const ListTitle = styled.h4`
 }
 
 @media ${props => props.theme.breakpoints.sm}{
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  margin-bottom: 4px;
+  font-size: 2rem;
+  line-height: 20px;
 }
 `
 

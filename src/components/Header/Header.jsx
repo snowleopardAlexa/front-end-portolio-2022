@@ -2,14 +2,13 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { GiLion } from 'react-icons/gi';
-
 import { Container, HeaderWrapper, ProjectsContainer, SocialIconsContainer, NavLink, Span, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <HeaderWrapper>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color: 'white',  marginBottom: "15px" }}>
+        <a style={{ display: 'flex', alignItems: 'center', color: 'white',  marginBottom: "15px", marginLeft: "10px" }}>
           <GiLion size="3rem" /> 
           <Span>snowleopardAlexa</Span>
         </a>
@@ -33,13 +32,13 @@ const Header = () =>  (
       </li>        
     </ProjectsContainer>
       <SocialIconsContainer>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://github.com/snowleopardAlexa">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://www.instagram.com/alexandraaslomski/?hl=en">
           <AiFillInstagram size="3rem"/>
         </SocialIcons>
       </SocialIconsContainer>

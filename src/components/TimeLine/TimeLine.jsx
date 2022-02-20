@@ -44,12 +44,12 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>My Progress</SectionTitle>
+      <SectionDivider />
+      <SectionTitle>About</SectionTitle>
       <SectionText>
       I started my journey with coding 4 years ago, and I dived into every nook and corner of
-      the extensive and beautiful world of the technology. I am passionate about building websites, apps, 
-      and about creating a great user experience. I believe that startups can change the world for the better,
-      and I wish to be a part of that change. 
+      beautiful and extensive world of technology. I am passionate about building websites, apps, 
+      and about creating great user experiences. 
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -115,7 +115,6 @@ const Timeline = () => {
           );
         })}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };

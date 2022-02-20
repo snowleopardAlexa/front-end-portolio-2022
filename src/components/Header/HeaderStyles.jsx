@@ -18,6 +18,7 @@ export const Container = styled.div`
   }
 `;
 export const HeaderWrapper = styled.div`
+  margin-top: 10px;
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
@@ -32,16 +33,30 @@ export const Span = styled.div `
    font-size: 2rem;
    font-family: 'Baloo 2', cursive;
    font-weight: 600;
+
+   @media ${(props) => props.theme.breakpoints.md} {
+    margin-right: 20px;
+    margin-top: 4px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-right: 20px;
+    margin-top: 4px;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
+  margin-top: 10px;
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    margin-left: 40px;
   }
 `;
+
 export const SocialIconsContainer = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
@@ -50,6 +65,7 @@ export const SocialIconsContainer = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
+    margin-left: 120px;
   }
 `;
 
@@ -66,7 +82,15 @@ export const NavLink = styled.a`
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    margin-left: 10px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-left: 10px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-left: 10px;
   }
 `;
 
@@ -118,7 +142,6 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 
 // Social Icons 
-
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;

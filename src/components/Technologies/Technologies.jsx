@@ -1,8 +1,7 @@
-import { DiReact } from 'react-icons/di';
-import { MdDesignServices } from 'react-icons/md';
+import { FaReact, FaSketch } from 'react-icons/fa';
+import { RiLayoutMasonryFill } from 'react-icons/ri';
 import { GrGraphQl } from 'react-icons/gr';
-import { FaDatabase } from 'react-icons/fa';
-import { FaSketch } from 'react-icons/fa';
+import { ImDatabase } from 'react-icons/im';
 import { CgWebsite } from 'react-icons/cg';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
@@ -10,12 +9,12 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 const Technologies = () => {
   return (
    <Section id="tech">
-     <SectionDivider />
+    <SectionDivider />
      <SectionTitle>Technologies</SectionTitle>
      <SectionText>
        I have worked with a range of technolgies building side projects as well as 
        freelancing and building the projects for non-profit organizations. I'm specializing in a Front-End Development 
-       and I'm an avid Notes Taker. 
+       and I'm an avid technical notes taker. 
      </SectionText>
      <List>
        <ListItem>
@@ -29,32 +28,32 @@ const Technologies = () => {
          </ListContainer>
        </ListItem>
        <ListItem>
-         <DiReact size="3rem" />
+         <FaReact size="3rem" />
          <ListContainer>
            <ListTitle>Front-End Frameworks</ListTitle>
            <ListParagraph>
              Experience with <br />
-             React.js, Angular, Next.js
+             React.js, Next.js
            </ListParagraph>
          </ListContainer>
        </ListItem>
        <ListItem>
-         <MdDesignServices size="3rem" />
+         <RiLayoutMasonryFill size="3rem" />
          <ListContainer>
            <ListTitle>UI Frameworks</ListTitle>
            <ListParagraph>
              Experience with <br />
-             Bootstrap, MaterialUI, SemanticUI, Ant-Design, Tailwind, Styled Components
+             Bootstrap, MaterialUI, Tailwind.
            </ListParagraph>
          </ListContainer>
        </ListItem>
        <ListItem>
-         <FaDatabase size="3rem" />
+         <ImDatabase size="3rem" />
          <ListContainer>
            <ListTitle>Back-End</ListTitle>
            <ListParagraph>
              Basic experience with <br />
-             Node, Express, MongoDB, Rest API, GraphQL
+             Node, Express, MongoDB.
            </ListParagraph>
          </ListContainer>
        </ListItem>
@@ -64,7 +63,7 @@ const Technologies = () => {
            <ListTitle>API Architecture</ListTitle>
            <ListParagraph>
              Experience with <br />
-             Rest API, GraphQL
+             Rest API, GraphQL.
            </ListParagraph>
          </ListContainer>
        </ListItem>
@@ -74,11 +73,12 @@ const Technologies = () => {
            <ListTitle>UI/UX</ListTitle>
            <ListParagraph>
              Basic experience with <br />
-             Sketch, Figma
+             Sketch, Figma.
            </ListParagraph>
          </ListContainer>
        </ListItem>
      </List>
+  
    </Section>
   )
 }
