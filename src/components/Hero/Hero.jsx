@@ -1,7 +1,6 @@
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
-//import Image from 'next/image';
 
 const Hero = () => {
   return (

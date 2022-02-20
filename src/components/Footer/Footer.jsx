@@ -1,10 +1,11 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer, Img, Span } from './FooterStyles';
 import { SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 
 const Footer = () => {
   return (
+    <>
     <FooterWrapper>
      <SectionDivider />
      <SectionTitle>Contact</SectionTitle>
@@ -35,6 +36,7 @@ const Footer = () => {
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
+    </>
   )
 }
 
