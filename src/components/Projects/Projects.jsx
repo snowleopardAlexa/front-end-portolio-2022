@@ -4,15 +4,16 @@ import { projects } from '../../constants/constants';
 
 const Projects = () => {
   return (
-   <Section nopadding id="projects">
-     <SectionDivider />
-     <SectionTitle main>Projects</SectionTitle>
+   <>
+   <Section id="projects">
+   <SectionDivider />
+   <SectionTitle>Projects</SectionTitle>
      <GridContainer>
        {projects.map(({ id, image, title, description, tags, source, visit }) => (
          <BlogCard key={id}>
            <Img src={image} />
            <TitleContent>
-             <HeaderThree title>{title}</HeaderThree>
+             <HeaderThree>{title}</HeaderThree>
              <Hr />
            </TitleContent>
            <CardInfo>{description}</CardInfo>
@@ -32,7 +33,8 @@ const Projects = () => {
        ))}
      </GridContainer>
    </Section>
+   </>
   )
 }
 
-export default Projects
+export default Projects;
