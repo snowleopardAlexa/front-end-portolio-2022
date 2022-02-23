@@ -41,17 +41,6 @@ const Header = () =>  (
         </Link>
       </li>        
     </ProjectsContainer>
-      <SocialIconsContainer>
-        <SocialIcons href="https://github.com/snowleopardAlexa">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.instagram.com/alexandraaslomski/?hl=en">
-          <AiFillInstagram size="3rem"/>
-        </SocialIcons>
-      </SocialIconsContainer>
     </Container>
 );
 
