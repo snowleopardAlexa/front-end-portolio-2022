@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const FooterWrapper = styled.section`
   width: calc(100vw - 96px);
@@ -57,6 +57,20 @@ justify-content: space-between;
   width: 100%;
   flex-direction: column;
 }
+`;
+
+// Social Icons 
+export const SocialIcons = styled.a`
+transition: 0.3s ease;
+color: white;
+border-radius: 50px;
+  padding: 8px;
+&:hover {
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
 `;
 
 export const CompanyContainer = styled.div`

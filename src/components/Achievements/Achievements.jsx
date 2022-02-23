@@ -1,5 +1,5 @@
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
+import { Box, Boxes, BoxNum, BoxText } from './AchievementsStyles';
 
 const data = [
   { number: 3900, text: 'Total GitHub Commits'},
@@ -10,7 +10,7 @@ const data = [
 
 const Accomplishments = () => {
   return (
-   <Section>
+   <Section id="achievements">
     <SectionDivider />
      <SectionTitle>Personal Achievements</SectionTitle>
      <Boxes>

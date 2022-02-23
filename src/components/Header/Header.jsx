@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { GiLion } from 'react-icons/gi';
-import { Container, HeaderWrapper, ProjectsContainer, SocialIconsContainer, NavLink, Span, SocialIcons } from './HeaderStyles';
+import { Container, HeaderWrapper, ProjectsContainer, NavLink, Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
