@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Img, ImgWrapper, ImgText, Button } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import { resume } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-const Timeline = () => {
+const Timeline = (props) => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -45,6 +46,17 @@ const Timeline = () => {
     <Section id="about">
       <SectionDivider />
       <SectionTitle>About</SectionTitle>
+      <ImgWrapper>
+      {resume.map(({ image, id }) => (
+        <Img key={id} src={image} width="50" height="50" />
+      ))}
+      </ImgWrapper>
+      <ImgText>
+       Aleksandra Slomska 
+      </ImgText>
+      <Button>
+        Resume
+      </Button>
       <SectionText>
       I started my journey with coding 4 years ago, and I dived into every nook and corner of
       beautiful and extensive world of technology. I am passionate about building websites, apps, 

@@ -1,6 +1,6 @@
 export const resume = [
   {
-    id: 1,
+    id: 0,
     image: '/images/alexao-r.png'
   }
 ];

@@ -156,3 +156,37 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `;
+
+export const Img = styled.img `
+  width: 100px;
+  height: 100px;
+`;
+
+export const ImgWrapper = styled.div `
+  margin-bottom: 20px;
+  margin-left: 10px;
+`;
+
+export const ImgText = styled.div `
+  font-size: 2rem;
+  font-family: 'Baloo 2', cursive;
+  margin-left: 10px;
+`;
+
+export const Button = styled.div `
+  font-family: 'Baloo 2', cursive;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)' : 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)'};
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background: ${({ alt }) => alt ? 'linear-gradient(270deg, #12c2e9 0%, #c471ed 100%)' : 'linear-gradient(270deg, #12c2e9 0%, #c471ed 100%)'};
+  }
+`;

@@ -174,6 +174,7 @@ export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
   border-radius: 50px;
+  font-family: 'Baloo 2', cursive;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
   font-weight: 600;
   display: flex;
@@ -204,6 +205,7 @@ export const ButtonBack = styled.div`
 `;
 
 export const ButtonFront = styled.button`
+  font-family: 'Baloo 2', cursive;
   border: none;
   border-radius: 50px;
   color: #fff;

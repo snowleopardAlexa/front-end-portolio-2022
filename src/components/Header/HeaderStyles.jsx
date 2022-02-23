@@ -49,7 +49,7 @@ export const ProjectsContainer = styled.div`
   margin-top: 10px;
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
