@@ -29,6 +29,16 @@ const Header = () =>  (
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
+      </li>  
+      <li>
+        <Link href="#achievements">
+          <NavLink>Achievements</NavLink>
+        </Link>
+      </li>  
+      <li>
+        <Link href="#contact">
+          <NavLink>Contact</NavLink>
+        </Link>
       </li>        
     </ProjectsContainer>
       <SocialIconsContainer>
