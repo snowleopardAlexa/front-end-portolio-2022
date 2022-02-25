@@ -33,14 +33,14 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
   height: 80px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.span`
   display: flex;
   justify-self: flex-start;
   color: #fff;
