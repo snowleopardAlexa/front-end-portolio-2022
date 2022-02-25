@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { Container, Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarStyles';
 
@@ -30,13 +29,13 @@ const Navbar = () =>  {
   <Container>
      <Nav>
       <NavbarContainer>
-      <NavLogo>
+        <NavLogo>
         <NavIcon style={{float: 'left'}} />
          snowleopardAlexa
         </NavLogo>
         <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
+          {click ? <FaTimes /> : <FaBars />}
+        </MobileIcon>
          <NavMenu onClick={handleClick} click={click} style={{float: 'right'}}>
               <NavItem>
               </NavItem>

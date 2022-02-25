@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Link from 'next/link';
-import { GiLion } from 'react-icons/gi';
+import styled from "styled-components";
+import Link from "next/link";
+import { GiLion } from "react-icons/gi";
 
 export const Container = styled.div`
   display: grid;
@@ -16,31 +16,30 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+    max-width: 100%;
   }
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background: #aa076b;
-  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
-  background: linear-gradient(to right, #61045f, #aa076b);
+  width: 100%;
   height: 80px;
-  font-family: "Dancing Script", cursive;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 99;
+  background: #333399;
 `;
 
 export const NavbarContainer = styled.div`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 `;
 
 export const NavLogo = styled.span`
+  font-family: 'Baloo 2', cursive;
   display: flex;
   justify-self: flex-start;
   color: #fff;
@@ -50,61 +49,65 @@ export const NavLogo = styled.span`
   align-items: center;
   margin-left: 20px;
 
-  @media screen and (max-width: 960px) {
+  @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 1rem;
   }
 `;
 
 export const NavIcon = styled(GiLion)`
-  margin-right: 0.5rem;
+  margin-right: 5px;
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5rem;
     cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(590%, -5%);
   }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  list-style: none;
   text-align: center;
-  padding: 15px;
+  padding: 47px;
+  margin-top: 17px;
 
-  @media screen and (max-width: 960px) {
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    background: #333399;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    height: 130vh;
+    width: 111.5vw;
     position: absolute;
+    padding: 0px;
     top: 80px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
-    opacity: 1;
+    left: ${({ click }) => (click ? 0 : "-175%")};
     transition: all 0.5s ease;
-    background: #aa076b;
-    background: -webkit-linear-gradient(to right, #61045f, #aa076b);
-    background: linear-gradient(to right, #61045f, #aa076b);
   }
+
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
-    padding: 20px;
+  margin-top: -45px;
+  height: 29px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 30px;
 
   &:hover {
-    border-bottom: 3px solid #ffe000;
+    border-bottom: 3px solid #ff00cc;
   }
 
-  @media screen and (max-width: 960px) {
+  @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
 
     &:hover {
@@ -113,52 +116,15 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-  }
-`;
-
 export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
-  color: #fff;
-  font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
-  text-decoration: none;
   height: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media ${(props) => props.theme.breakpoints.sm} {
     text-align: center;
-    margin-left: 0px;
-    padding: 2rem;
     width: 100%;
     display: table;
-
-    &:hover {
-      color: #ffe000;
-      transition: all 0.3s ease;
-    }
-  }
-`;
-
-export const NavBtnLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px 16px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-
-  @media screen and (max-width: 960px) {
-    margin-left: 0px;
   }
 `;
 
