@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { GiLion } from 'react-icons/gi';
 import { FaTimes, FaBars } from 'react-icons/fa';
-import { Container, Nav, NavLogo, NavbarContainer, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavItemBtn, NavBtnLink, Button } from './NavbarStyles';
+import { Container, Nav, NavLogo, NavbarContainer, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarStyles';
 
 const Navbar = () =>  (
   <Container>
@@ -9,7 +8,7 @@ const Navbar = () =>  (
       <NavbarContainer>
         <NavLogo as={Link} to='/' onClick={closeMobileMenu} >
           <NavIcon style={{float: 'left'}}>
-          <GiLion size="3rem" /> snowleopardAlexa
+            snowleopardAlexa
           </NavIcon>
          </NavLogo>
             <MobileIcon onClick={handleClick}>
@@ -33,19 +32,6 @@ const Navbar = () =>  (
               <NavItem>
                 <NavLinks to="/contact" href="#contact" onClick={closeMobileMenu}>Contact</NavLinks>
               </NavItem>
-              <NavItemBtn>
-                {button ? (
-                  <NavBtnLink to="/book-apt">
-                    <Button>Book Appointment</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to="/book-apt">
-                    <Button onClick={closeMobileMenu} fontBig >
-                      Book Appointment
-                    </Button>
-                  </NavBtnLink>
-                )}
-              </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>

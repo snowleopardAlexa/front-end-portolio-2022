@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Link from 'next/link';
+import { GiLion } from 'react-icons/gi';
 
 export const Container = styled.div`
   display: grid;
@@ -53,7 +55,7 @@ export const NavLogo = styled(Link)`
   }
 `;
 
-export const NavIcon = styled(GiButterflyFlower)`
+export const NavIcon = styled(GiLion)`
   margin-right: 0.5rem;
 `;
 
