@@ -1,4 +1,3 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -17,115 +16,147 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
-export const HeaderWrapper = styled.div`
-  margin-top: 10px;
-  grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-`;
 
-export const Span = styled.div `
-   margin-left: 10px;
-   font-size: 2rem;
-   font-family: 'Baloo 2', cursive;
-   font-weight: 600;
-
-   @media ${(props) => props.theme.breakpoints.md} {
-    margin-right: 20px;
-    margin-top: 4px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.lg} {
-    margin-right: 20px;
-    margin-top: 4px;
-  }
-`;
-
-export const ProjectsContainer = styled.div`
-  margin-top: 10px;
-  grid-area: 1 / 2 / 2 / 4;
+export const Nav = styled.nav`
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: #aa076b;
+  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
+  background: linear-gradient(to right, #61045f, #aa076b);
+  height: 80px;
+  font-family: "Dancing Script", cursive;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+`;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
-    margin-left: 40px;
+export const NavbarContainer = styled(Container)`
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+`;
+
+export const NavLogo = styled(Link)`
+  display: flex;
+  justify-self: flex-start;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.2rem;
+  align-items: center;
+  margin-left: 20px;
+
+  @media screen and (max-width: 960px) {
+    margin-right: 1rem;
   }
 `;
 
-// Navigation Links
-export const NavLink = styled.a`
-  font-family: 'Readex Pro', sans-serif;
-  font-size: 2rem;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
-  &:hover {
-    color: #fff;
-    opacity: 1;
+export const NavIcon = styled(GiButterflyFlower)`
+  margin-right: 0.5rem;
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
     cursor: pointer;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 10px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    margin-left: 10px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.lg} {
-    margin-left: 10px;
-  }
 `;
 
-/// DropDown Contact
-export const ContactDropDown = styled.button`
-  border: none;
+export const NavMenu = styled.ul`
   display: flex;
-  position: relative;
-  background: none;
-  font-size: 1.7rem;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  padding: 15px;
 
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  transition: 0.3s ease;
-
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    color: #fff;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.4rem 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 0;
-  }
-`;
-
-export const NavProductsIcon = styled(IoIosArrowDropdown)`
-  margin-left: 8px;
-  display: flex;
-  align-self: center;
-  transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
-
-  &:hover {
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 2px 0 0 2px;
-    width: 15px;
+    transition: all 0.5s ease;
+    background: #aa076b;
+    background: -webkit-linear-gradient(to right, #61045f, #aa076b);
+    background: linear-gradient(to right, #61045f, #aa076b);
   }
 `;
 
+export const NavItem = styled.li`
+    height: 80px;
+    padding: 20px;
+
+  &:hover {
+    border-bottom: 3px solid #ffe000;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+`;
+
+export const NavItemBtn = styled.li`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+`;
+
+export const NavLinks = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  height: 100%;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    margin-left: 0px;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #ffe000;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+
+export const NavBtnLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+
+  @media screen and (max-width: 960px) {
+    margin-left: 0px;
+  }
+`;
 
