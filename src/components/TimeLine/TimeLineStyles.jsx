@@ -182,14 +182,14 @@ export const Button = styled.div `
   text-align: center;
   color: white;
   padding: 20px;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)' : 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)'};
   border-radius: 50px;
-  -webkit-transition: background 2s ease-out;
-  -moz-transition: background 2s ease-out;
-  -o-transition: background 2s ease-out;
-  transition: background 2s ease-out;
-
+  background-color:: #ff00cc;
+  background-image: -webkit-linear-gradient(to left, #333399, #ff00cc); /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, #ff00cc, #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: background-color 2s ease-out 100ms;
+  
   &:hover {
-    background: linear-gradient(270deg, #12c2e9 0%, #c471ed 100%);
+    background: #12c2e9;
   }
 `;
+

@@ -69,7 +69,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     top: 50%;
     left: 50%;
-    transform: translate(590%, -5%);
+    transform: translate(635%, -5%);
   }
 `;
 
@@ -78,7 +78,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   text-align: center;
   padding: 47px;
-  margin-top: 17px;
+  margin-top: 14px;
 
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -89,7 +89,7 @@ export const NavMenu = styled.ul`
     width: 111.5vw;
     position: absolute;
     padding: 0px;
-    top: 80px;
+    top: 60px;
     left: ${({ click }) => (click ? 0 : "-175%")};
     transition: all 0.5s ease;
   }
@@ -98,7 +98,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   margin-top: -45px;
-  height: 29px;
+  line-height: 59px;
   font-size: 2rem;
   font-weight: bold;
   margin-left: 30px;
@@ -108,6 +108,10 @@ export const NavItem = styled.li`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 0px;
+    padding: 10px;
+    margin-left: 15px;
+    line-height: 100px;
     width: 100%;
 
     &:hover {
