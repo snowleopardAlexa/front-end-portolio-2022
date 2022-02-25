@@ -2,7 +2,8 @@ import { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Img, ImgWrapper, ImgText, Button } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
-import { resume } from '../../constants/constants';
+import { alexaphoto } from '../../constants/constants';
+//import resume from "../../documents/resume.pdf";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -47,7 +48,7 @@ const Timeline = (props) => {
       <SectionDivider />
       <SectionTitle>About</SectionTitle>
       <ImgWrapper>
-      {resume.map(({ image, id }) => (
+      {alexaphoto.map(({ image, id }) => (
         <Img key={id} src={image} width="50" height="50" />
       ))}
       </ImgWrapper>

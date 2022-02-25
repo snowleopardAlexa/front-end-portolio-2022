@@ -1,4 +1,4 @@
-export const resume = [
+export const alexaphoto = [
   {
     id: 0,
     image: '/images/alexao-r.png'

@@ -175,7 +175,7 @@ export const ImgText = styled.div `
 
 export const Button = styled.div `
   font-family: 'Baloo 2', cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 200px;
@@ -184,9 +184,12 @@ export const Button = styled.div `
   padding: 20px;
   background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)' : 'linear-gradient(270deg, #ff00cc 0%, #333399 100%)'};
   border-radius: 50px;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: background 2s ease-out;
+  -moz-transition: background 2s ease-out;
+  -o-transition: background 2s ease-out;
+  transition: background 2s ease-out;
 
   &:hover {
-    background: ${({ alt }) => alt ? 'linear-gradient(270deg, #12c2e9 0%, #c471ed 100%)' : 'linear-gradient(270deg, #12c2e9 0%, #c471ed 100%)'};
+    background: linear-gradient(270deg, #12c2e9 0%, #c471ed 100%);
   }
 `;
