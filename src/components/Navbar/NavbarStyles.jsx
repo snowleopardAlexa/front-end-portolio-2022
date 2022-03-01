@@ -53,6 +53,11 @@ export const NavLogo = styled.span`
     margin-right: 1rem;
     font-size: 1.7rem;
   }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
 `;
 
 export const NavIcon = styled(GiLion)`
@@ -61,16 +66,6 @@ export const NavIcon = styled(GiLion)`
 
 export const MobileIcon = styled.div`
  display: none;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
@@ -81,6 +76,16 @@ export const MobileIcon = styled.div`
     font-size: 2rem;
     cursor: pointer;
   }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-150%, 100%);
+    font-size: 2.7rem;
+    cursor: pointer;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -89,27 +94,32 @@ export const NavMenu = styled.ul`
   text-align: center;
   padding: 47px;
   margin-top: 14px;
-
+  border: 2px solid red;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    background: #333399;
-    display: flex;
-    flex-direction: column;
-    height: 130vh;
-    width: 111.5vw;
-    position: absolute;
-    padding: 0px;
-    top: 60px;
-    left: ${({ click }) => (click ? 0 : "-175%")};
-    transition: all 0.5s ease;
+    width: 85vw;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     background: #333399;
     display: flex;
     flex-direction: column;
-    height:130vh;
-    width: 111.5vw;
+    height: 130vh;
+    width: 95vw;
+    position: absolute;
+    padding: 150px;
+    top: 60px;
+    left: ${({ click }) => (click ? 0 : "-175%")};
+    transition: all 0.5s ease;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    background: #333399;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    height: 130vh;
+    width: 95%;
     position: absolute;
     padding: 150px;
     top: 60px;
@@ -131,12 +141,11 @@ export const NavItem = styled.li`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: 10px;
     padding: 10px;
-    margin-left: 0px;
-    line-height: 100px;
+    margin-left: -50px;
+    line-height: 10px;
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     
     &:hover {
       border: none;
@@ -145,8 +154,14 @@ export const NavItem = styled.li`
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 1.7rem;
-    margin-left: -60px;
+    margin-left: -30px;
     line-height: 120px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 2.2rem;
+    margin-left: 20px;
+    line-height: 150px;
   }
 `;
 
