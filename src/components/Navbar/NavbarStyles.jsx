@@ -60,17 +60,26 @@ export const NavIcon = styled(GiLion)`
 `;
 
 export const MobileIcon = styled.div`
-  display: none;
+ display: none;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-150%, 120%);
     font-size: 2rem;
     cursor: pointer;
-    top: 50%;
-    left: 50%;
-    transform: translate(1050%, 0%);
   }
 `;
 
@@ -90,6 +99,19 @@ export const NavMenu = styled.ul`
     width: 111.5vw;
     position: absolute;
     padding: 0px;
+    top: 60px;
+    left: ${({ click }) => (click ? 0 : "-175%")};
+    transition: all 0.5s ease;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    background: #333399;
+    display: flex;
+    flex-direction: column;
+    height:130vh;
+    width: 111.5vw;
+    position: absolute;
+    padding: 150px;
     top: 60px;
     left: ${({ click }) => (click ? 0 : "-175%")};
     transition: all 0.5s ease;
@@ -119,6 +141,12 @@ export const NavItem = styled.li`
     &:hover {
       border: none;
     }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 1.7rem;
+    margin-left: -60px;
+    line-height: 120px;
   }
 `;
 

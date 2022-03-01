@@ -10,7 +10,7 @@ const Navbar = () =>  {
   const closeMobileMenu  = () => setClick(false);
 
   const showButton = () => {
-    if(window.innerWidth <= 2000) {
+    if(window.innerWidth <= 1200) {
       setButton(false)
     } else {
       setButton(true)
@@ -36,7 +36,7 @@ const Navbar = () =>  {
         <MobileIcon onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </MobileIcon>
-         <NavMenu button={button} onClick={handleClick} click={click} style={{float: 'right'}}>
+         <NavMenu onClick={handleClick} click={click} style={{float: 'right'}}>
               <NavItem>
               </NavItem>
               <NavItem>
