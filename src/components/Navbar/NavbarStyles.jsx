@@ -51,6 +51,7 @@ export const NavLogo = styled.span`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 1rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -65,11 +66,11 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     top: 50%;
     left: 50%;
-    transform: translate(635%, -5%);
+    transform: translate(1050%, 0%);
   }
 `;
 
@@ -108,12 +109,13 @@ export const NavItem = styled.li`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 0px;
     line-height: 100px;
     width: 100%;
-
+    font-size: 1.7rem;
+    
     &:hover {
       border: none;
     }
