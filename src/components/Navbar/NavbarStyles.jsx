@@ -39,7 +39,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.span`
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
   display: flex;
   justify-self: flex-start;
   color: #fff;
@@ -65,7 +65,17 @@ export const NavIcon = styled(GiLion)`
 `;
 
 export const MobileIcon = styled.div`
- display: none;
+  display: none;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-150%, 120%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
@@ -94,10 +104,18 @@ export const NavMenu = styled.ul`
   text-align: center;
   padding: 47px;
   margin-top: 14px;
-  border: 2px solid red;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 55vw;
+    background: #333399;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    width: 112vw;
+    position: absolute;
+    padding: 60px;
+    top: 100px;
+    left: ${({ click }) => (click ? 0 : "-175%")};
+    transition: all 0.5s ease;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -126,7 +144,6 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : "-175%")};
     transition: all 0.5s ease;
   }
-
 `;
 
 export const NavItem = styled.li`
@@ -142,11 +159,11 @@ export const NavItem = styled.li`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 10px;
-    margin-left: -50px;
-    line-height: 10px;
+    margin-left: 0px;
+    line-height: 100px;
     width: 100%;
-    font-size: 1.2rem;
-    
+    font-size: 1.7rem;
+
     &:hover {
       border: none;
     }
@@ -176,4 +193,3 @@ export const NavLinks = styled(Link)`
     display: table;
   }
 `;
-

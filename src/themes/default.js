@@ -15,9 +15,9 @@ export default {
   },
   // Breakpoints for responsive design
   breakpoints: {
-    sm: 'screen and (max-width: 420px)',
-    md: 'screen and (max-width: 768px)',
-    lg: 'screen and (max-width: 1024px)',
-    xl: 'screen and (max-width: 1280px)'
+    sm: 'screen and (min-width: 0px) and (max-width: 420px)',
+    md: 'screen and (min-width: 420px) and (max-width: 768px)',
+    lg: 'screen and (min-width: 768px) and (max-width: 1024px)',
+    xl: 'screen and (min-width: 1024px) and (max-width: 1280px)'
   },
 }

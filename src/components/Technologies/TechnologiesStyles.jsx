@@ -78,7 +78,7 @@ export const ListTitle = styled.h4`
   font-size: 2rem;
   line-height: 20px;
 }
-`
+`;
 
 export const ListParagraph = styled.p`
   font-size: 18px;
@@ -94,7 +94,7 @@ export const ListParagraph = styled.p`
     font-size: 14px;
     line-height: 22px;
   }
-`
+`;
 
 export const ListItem = styled.li`
   max-width: 320px;
@@ -110,7 +110,7 @@ export const ListItem = styled.li`
   max-width: 320px;
   flex-direction: row;
 }
-`
+`;
 
 export const ListIcon = styled.img`
   display: block;
@@ -129,4 +129,4 @@ export const ListIcon = styled.img`
     height: 32px;
     margin-bottom: 0px;
   }
-`
+`;

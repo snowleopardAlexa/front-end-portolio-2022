@@ -7,7 +7,7 @@ const Hero = () => {
     <Section>
     <LeftSection>
       <SectionTitle main center>
-        Hi, I'm Alexa! <br />
+        Hi, I am Alexa! <br />
         Welcome to my portfolio
       </SectionTitle>
       <SectionText>

@@ -45,10 +45,10 @@ export const projects = [
     {
       title: 'Uber Clone',
       description: "This is an Uber Clone.",
-      image: '/images/music.png',
+      image: '/images/uber-clone.png',
       tags: ['React Native', 'Tailwind', 'Redux Toolkit'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+      source: '',
+      visit: '',
       id: 5,
     },
     {
