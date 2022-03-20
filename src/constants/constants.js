@@ -1,7 +1,7 @@
 export const alexaphoto = [
   {
     id: 0,
-    image: '/images/alexao-r.png'
+    image: '/images/alexa.png'
   }
 ];
 
@@ -18,7 +18,7 @@ export const projects = [
     {
       title: 'Movies App',
       description: "This is a Movies App. It fetches an API from TMDB and displays the movies.",
-      image: '/images/movie-app.png',
+      image: '/images/movies-app.png',
       tags: ['React', 'Redux', 'SCSS'],
       source: 'https://google.com',
       visit: 'https://google.com',
