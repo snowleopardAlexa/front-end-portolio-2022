@@ -27,8 +27,10 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
   }
-  li{
+  li {
     list-style: none;
   }
 `;

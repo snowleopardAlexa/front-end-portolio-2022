@@ -99,20 +99,21 @@ export const ExternalLinks = styled.a`
   font-size: 2rem;
   padding: 1.2rem 2rem;
   border-radius: 25px;
-  background: #ff00cc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background-color: #ff00cc; /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(
     to left,
     #333399,
     #ff00cc
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  background-image: linear-gradient(
     to left,
     #333399,
     #ff00cc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  transition: 0.5s;
+  transition: background-color 2s ease-out 100ms;
+
   &:hover {
-    background: #f27121;
+    background: #12c2e9; /* fallback for old browsers */
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

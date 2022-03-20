@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LeftSection = styled.div`
   width: 100%;
@@ -7,8 +7,8 @@ export const LeftSection = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: -20px;
-    margin-top: -50px;
+    margin-left: -48px;
+    margin-top: -70px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

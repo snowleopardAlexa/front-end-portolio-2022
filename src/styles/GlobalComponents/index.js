@@ -174,6 +174,7 @@ export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
   border-radius: 50px;
+  font-family: 'Baloo 2', cursive;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
   font-weight: 600;
   display: flex;
@@ -204,6 +205,7 @@ export const ButtonBack = styled.div`
 `;
 
 export const ButtonFront = styled.button`
+  font-family: 'Baloo 2', cursive;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -233,7 +235,6 @@ export const ButtonFront = styled.button`
     opacity: 1;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
-
   &:disabled{
     background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
     opacity: 0.5;
