@@ -97,7 +97,7 @@ export const NavMenu = styled.ul`
   border: 2px solid red;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 85vw;
+    width: 55vw;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
