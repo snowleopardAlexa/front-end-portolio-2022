@@ -42,12 +42,8 @@ export const CarouselMobileScrollNode = styled.div`
 export const CarouselItem = styled.div`
   background: #212d45;
   border-radius: 12px;
-  max-width: 196px;
+  width: 180px;
   padding: 20px;
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 124px;
-  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 12px;
@@ -63,6 +59,14 @@ export const CarouselItem = styled.div`
 
     ${(props) =>
       props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 124px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 200px;
   }
 `;
 
