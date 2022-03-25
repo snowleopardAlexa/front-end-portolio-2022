@@ -40,7 +40,6 @@ export const BlogCard = styled.div`
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
-  width: 100%;
   margin-top: 15px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -91,6 +90,22 @@ export const CardInfo = styled.p`
   }
 `;
 
+export const TagList = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+`;
+
+export const Tag = styled.li`
+  color: #d8bfbf;
+  font-size: 1.5rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+`;
+
 export const UtilityList = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -126,22 +141,7 @@ export const ExternalLinks = styled.a`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 `;
 
-export const TagList = styled.ul`
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
-`;
-
-export const Tag = styled.li`
-  color: #d8bfbf;
-  font-size: 1.5rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 1rem;
-    padding: 10px;
-  }
-`;

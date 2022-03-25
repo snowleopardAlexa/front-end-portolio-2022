@@ -1,5 +1,4 @@
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
+import { Section, SectionText, SectionTitle, Button } from '../../styles/GlobalComponents';
 import { LeftSection } from './HeroStyles';
 
 const Hero = () => {

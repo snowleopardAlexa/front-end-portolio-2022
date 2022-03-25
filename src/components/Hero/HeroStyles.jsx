@@ -21,3 +21,7 @@ export const LeftSection = styled.div`
     width: 80%;
   }
 `;
+
+export const Button = styled.button`
+  background-color: green;
+`;
