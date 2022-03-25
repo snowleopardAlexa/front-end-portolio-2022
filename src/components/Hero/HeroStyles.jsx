@@ -8,7 +8,7 @@ export const LeftSection = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: -48px;
-    margin-top: -70px;
+    margin-top: -50px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

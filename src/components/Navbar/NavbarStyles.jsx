@@ -110,10 +110,10 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     height: 130vh;
-    width: 112vw;
+    width: 115vw;
     position: absolute;
-    padding: 60px;
-    top: 100px;
+    padding: 90px;
+    top: 60px;
     left: ${({ click }) => (click ? 0 : "-175%")};
     transition: all 0.5s ease;
   }
