@@ -80,7 +80,7 @@ const Timeline = (props) => {
       <Button
         onClick={() =>
           (window.location =
-            " https://snowleopardalexa.github.io/resume-pdf-html/")
+            "https://snowleopardalexa.github.io/resume-pdf-html/")
         }
       >
         Resume
