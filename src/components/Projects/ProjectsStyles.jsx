@@ -14,26 +14,26 @@ export const GridContainer = styled.section`
   place-items: center;
   column-gap: 2rem;
   row-gap: 3rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 0;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: 10px;
+    padding: 0rem;
   }
 `;
 
 export const BlogCard = styled.div`
+  font-family: 'Readex Pro', sans-serif;
   border-radius: 20px;
   background: #212d45;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+    margin-left: 25px;
   }
 `;
 
@@ -42,6 +42,10 @@ export const TitleContent = styled.div`
   z-index: 20;
   width: 100%;
   margin-top: 15px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.5rem;
+  }
 `;
 
 export const HeaderThree = styled.h3`
@@ -51,7 +55,7 @@ export const HeaderThree = styled.h3`
   font-size: 3rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `;
 
@@ -92,7 +96,7 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  margin-bottom: 30px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
@@ -130,14 +134,14 @@ export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 1rem;
-    padding: 15px;
-  }
 `;
 
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1rem;
+    padding: 10px;
+  }
 `;
